@@ -23,9 +23,9 @@ class ttt extends JFrame implements ActionListener {
           "", "", "",
      };
 
-     //Add Image icons to the board
-     ImageIcon x = new ImageIcon("img\\cross.png");
-     ImageIcon o = new ImageIcon("img\\circle.png");
+      //Add Image icons to the board
+     ImageIcon x = new ImageIcon("img\\cross1.png");
+     ImageIcon o = new ImageIcon("img\\circle2.png");
      ImageIcon clear = new ImageIcon("img\\blankwhite.png");
 
      //Constructor
@@ -37,7 +37,7 @@ class ttt extends JFrame implements ActionListener {
 
           setLocationRelativeTo(null); //to bring the window in the middle of the screen
 
-          //Adding buttons. Buttons here are the gird lines        
+          //Adding buttons. Buttons here are the grid lines        
           add(b1);
           add(b2);
           add(b3);
@@ -68,132 +68,149 @@ class ttt extends JFrame implements ActionListener {
           Object n = e.getSource();
           //Button b1
           if(n == b1){
-               if(Chanceof == "X"){
-                    values[0] = "X";
-                    b1.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[0] = "O";
-                    b1.setIcon(o);
-                    Chanceof = "X";
+               if(values[0].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[0] = "X";
+                         b1.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[0] = "O";
+                         b1.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b1.setEnabled(true);
                }
           }
 
           //Button b2
           else if(n == b2){
-               if(Chanceof == "X"){
-                    values[1] = "X";
-                    b2.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[1] = "O";
-                    b2.setIcon(o);
-                    Chanceof = "X";
+               if(values[1].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[1] = "X";
+                         b2.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[1] = "O";
+                         b2.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b2.setEnabled(true);
                }
           }
 
           //Button b3
           else if(n == b3){
-               if(Chanceof == "X"){
-                    values[2] = "X";
-                    b3.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[2] = "O";
-                    b3.setIcon(o);
-                    Chanceof = "X";
+               if(values[2].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[2] = "X";
+                         b3.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[2] = "O";
+                         b3.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b3.setEnabled(true);
                }
           }
 
           //Button b4
           else if(n == b4){
-               if(Chanceof == "X"){
-                    values[3] = "X";
-                    b4.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[3] = "O";
-                    b4.setIcon(o);
-                    Chanceof = "X";
+               if(values[3].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[3] = "X";
+                         b4.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[3] = "O";
+                         b4.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b4.setEnabled(true);
                }
           }
 
           //Button b5
           else if(n == b5){
-               if(Chanceof == "X"){
-                    values[4] = "X";
-                    b5.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[4] = "O";
-                    b5.setIcon(o);
-                    Chanceof = "X";
+               if(values[4].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[4] = "X";
+                         b5.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[4] = "O";
+                         b5.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b5.setEnabled(true);
                }
           }
 
           //Button b6
           else if(n == b6){
-               if(Chanceof == "X"){
-                    values[5] = "X";
-                    b6.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[5] = "O";
-                    b6.setIcon(o);
-                    Chanceof = "X";
+               if(values[5].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[5] = "X";
+                         b6.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[5] = "O";
+                         b6.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b6.setEnabled(true);
                }
           }
 
           //Button b7
           else if(n == b7){
-               if(Chanceof == "X"){
-                    values[6] = "X";
-                    b7.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[6] = "O";
-                    b7.setIcon(o);
-                    Chanceof = "X";
+               if(values[6].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[6] = "X";
+                         b7.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[6] = "O";
+                         b7.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b7.setEnabled(true);
                }
           }
 
           //Button b8
           else if(n == b8){
-               if(Chanceof == "X"){
-                    values[7] = "X";
-                    b8.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[7] = "O";
-                    b8.setIcon(o);
-                    Chanceof = "X";
+               if(values[7].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[7] = "X";
+                         b8.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[7] = "O";
+                         b8.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b8.setEnabled(true);
                }
           }
 
           //Button b9
           else if(n == b9){
-               if(Chanceof == "X"){
-                    values[8] = "X";
-                    b9.setIcon(x);
-                    Chanceof = "O";
-               }
-               else if(Chanceof == "O"){
-                    values[8] = "O";
-                    b9.setIcon(o);
-                    Chanceof = "X";
+               if(values[8].equals("")){
+                    if(Chanceof.equals("X")){
+                         values[8] = "X";
+                         b9.setIcon(x);
+                         Chanceof = "O";
+                    } else if(Chanceof.equals("O")){
+                         values[8] = "O";
+                         b9.setIcon(o);
+                         Chanceof = "X";
+                    }
+                    b9.setEnabled(true);
                }
           }
-          new LookforWin().whoWins(values,this);
+          new LookforWin().whoWins(values, this);
      }
-     
 }
 
 //main class
